@@ -1,0 +1,18 @@
+<div class="login-container row">
+    <form class="row login-form">
+      <h2>Login</h2>
+      <div class="row form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <div class="row form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <div class="row">
+        <button type="button col-6" (click)="login()">Login</button>
+        <div class="sign-in col-6" (click)="signIn()">SignIn</div>
+      </div>
+    </form>
+  </div>
+  
